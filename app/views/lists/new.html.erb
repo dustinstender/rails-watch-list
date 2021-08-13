@@ -2,6 +2,7 @@
 <h1>Add List</h1>
 <%= simple_form_for(@list) do |t| %>
   <%= t.input :name %>
+  <%= f.input :photo, as: :file %>
   <%= t.submit %>
 <% end %>
 <br>
