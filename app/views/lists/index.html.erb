@@ -1,0 +1,17 @@
+<div class="container">
+
+<div id="typed-strings">
+  <h1>Add a new list of <em>movies</em>.</h1>
+</div>
+<span id="typed"></span>
+<ul>
+  <% @lists.each do |list| %>
+    <li><%=link_to list.name, list_path(list) %> <%= link_to "Delete",
+            list_path(list),
+            method: :delete,
+            data: { confirm: "Are you sure?" }, class: "btn btn-danger"%></li>
+            <br>
+  <% end %>
+  <br>
+</ul>
+</div>

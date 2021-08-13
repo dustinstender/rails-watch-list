@@ -5,9 +5,53 @@
 
 // External libraries
 @import "bootstrap/scss/bootstrap";
-@import "font-awesome-sprockets";
-@import "font-awesome";
+// @import "font-awesome-sass";
+// @import "font-awesome";
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+h1 {
+  margin-top: 30px;
+  color: white;
+  margin-bottom:40px;
+}
+
+a {
+  color: white;
+  &:hover {
+    text-decoration: none;
+    color: yellow;
+  }
+}
+
+li {
+  color: white;
+}
+
+span {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2luZW1hfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80');
+  background-size: cover;
+  text-align: center;
+}
+
+ul {
+ list-style-type: none;
+}
+
+label {
+  color: white;
+}
+
+.typed-h1 {
+  margin: 30px auto;
+}
